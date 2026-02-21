@@ -15,7 +15,7 @@ namespace EternalStorm;
 public class EternalStormModSystem : ModSystem
 {
     public static EternalStormModSystem Instance;
-    public static string ConfigName = "EternalStormConfig.json";
+    public static string ConfigName = "EternalStormConfigWinter.json";
 
     public ICoreAPI api;
     public  ICoreServerAPI sapi;
@@ -426,8 +426,8 @@ public class EternalStormModConfig
     public float RiftDamageRadius = 4f;
     public float RiftDamagePerSecond = 3f;
 
-    public int BorderStart = 2000;
-    public int BorderEnd = 3000;
+    public int BorderStart = 5000;
+    public int BorderEnd = 7000;
 
     /// <summary>
     /// How much temporal stability (sanity) is reduced per second at full intensity (t == 1.0)

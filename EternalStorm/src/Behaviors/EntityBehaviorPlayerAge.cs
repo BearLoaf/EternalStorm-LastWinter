@@ -124,14 +124,6 @@ public class EntityBehaviorPlayerAge : EntityBehavior
             hunger.ProteinLevel = 0f;
             hunger.DairyLevel = 0f;
 
-            var isPlayer = entityPlayer.Player as IServerPlayer;
-            if (isPlayer != null)
-            {
-                var spawn = isPlayer.GetSpawnPosition(false).AsBlockPos;
-                if (!EternalStormModSystem.BlockInSafeZone(spawn))
-                    hunger.Saturation = 0;
-            }
-
             hunger.UpdateNutrientHealthBoost();
         }
     }
